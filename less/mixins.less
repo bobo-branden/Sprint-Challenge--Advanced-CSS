@@ -1,1 +1,20 @@
 // Mixins Here
+.fx(@direction:row;   @justify:center;  @wrap:wrap;  @align-i: center;  @align-c: center;){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    flex-wrap: @wrap;
+    align-items:  @align-i;
+    align-content: @align-c;  
+  }
+
+  .btn-mix(@back, @text){
+      .fx();
+      background-color: @back ;
+      width: 30%;
+      height: 3.5rem;
+      color: @text;
+      font-size: 1.85rem;
+      border-radius: 6px;
+      border: 1px solid @btn-bg-color;
+  }
