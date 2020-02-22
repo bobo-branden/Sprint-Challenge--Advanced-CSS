@@ -1,10 +1,14 @@
 // Home Content
 
 .home {
-  @media @phone{
-    .fx();
-    width: 100%;
+  
+  .wrapper{
+    width:100%;
   }
+  // @media @phone{
+  //   .fx();
+  //   width: 100%;
+  // }
   .intro {
 
     h2 {
@@ -89,6 +93,9 @@
       }
       .btn {        
         .btn-mix(@btn-bg-color , white);
+        @media @phone{
+          width:100%;
+        }
         &:hover{
           .btn-mix(white, @btn-bg-color );
           @media @phone{
@@ -108,7 +115,8 @@
         border-radius: 10px;
         @media @phone
     {margin-top: 20px;
-       img{
+      img{
+        padding: 0;
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -118,3 +126,13 @@
     }
   }
 }// home
+img.top-img{
+  
+  max-width: 90%;
+  //height: auto;
+  @media @phone{
+    margin: 0 auto;
+max-width: 90%px;
+min-width: 340px;
+  }
+}
